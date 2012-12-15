@@ -51,4 +51,4 @@ posix-readline: $(OUTDIR_REL) $(OUTDIR_DBG)
 	@if [ ! -e /usr/include/readline ]; then echo 'You need to install the libreadline development package (e.g sudo apt-get install libreadline6-dev)'; exit 1; fi
 	echo -lreadline > $(OUTDIR_REL)/libs.txt
 	echo -lreadline > $(OUTDIR_DBG)/libs.txt
-	touch $(PLATFORM)/incs.txt
+	touch $(PM)/incs.txt
